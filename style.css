@@ -1,0 +1,18 @@
+/* Nubolín site: soft sky palette, rounded display type, single readable column */
+:root{--bg:#F3F7FB;--surface:#FFFFFF;--fg:#1E2A3A;--muted:#55657A;--sky:#3D7FC4;--line:#DCE5EF;
+--display:"Fredoka",ui-rounded,"Arial Rounded MT Bold",system-ui,sans-serif;--body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111A24;--surface:#1A2533;--fg:#E8EEF5;--muted:#A3B3C6;--sky:#7DB6F0;--line:#2A3747;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:720px;margin:0 auto;padding-inline:20px;padding-block:32px 56px;display:grid;gap:28px}
+.hero{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.hero img{display:block;width:100%;height:auto}
+.brand{display:flex;gap:16px;align-items:center}
+.brand img{width:72px;height:72px;border-radius:50%}
+h1,h2{font-family:var(--display);font-weight:600;line-height:1.15;margin:0;text-wrap:balance}
+h1{font-size:2.2rem} h2{font-size:1.35rem;margin-top:8px}
+p,li{max-width:65ch} .muted{color:var(--muted)}
+a{color:var(--sky)} a:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.links a{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:600}
+footer{border-top:1px solid var(--line);padding-top:16px;font-size:.9rem;color:var(--muted)}
